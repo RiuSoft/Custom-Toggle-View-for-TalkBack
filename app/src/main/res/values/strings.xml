@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Custom Toggle View for TalkBack</string>
+    <!--
+        WCSwitchSettingView
+    -->
+    <string name="option_title">Email note to customer</string>
+    <string name="option_summary">If disabled will add the note as private</string>
+    <string name="talkbackified">TalkBackified!</string>
+    <string name="original">Original</string>
+    <string name="switch_enabled">option checked</string>
+    <string name="switch_disabled">option not checked</string>
+</resources>
