@@ -9,23 +9,23 @@ import android.widget.Checkable
 import android.widget.CompoundButton
 import android.widget.CompoundButton.OnCheckedChangeListener
 import android.widget.LinearLayout
-import kotlinx.android.synthetic.main.view_switch_setting.view.*
+import kotlinx.android.synthetic.main.view_single_option_toggle.view.*
 
-class SwitchSettingView @JvmOverloads constructor(ctx: Context, attrs: AttributeSet? = null)
+class SingleOptionToggleView @JvmOverloads constructor(ctx: Context, attrs: AttributeSet? = null)
     : LinearLayout(ctx, attrs), Checkable {
     init {
         orientation = LinearLayout.VERTICAL
-        View.inflate(context, R.layout.view_switch_setting, this)
+        View.inflate(context, R.layout.view_single_option_toggle, this)
 
         if (attrs != null) {
-            val a = context.obtainStyledAttributes(attrs, R.styleable.SwitchSettingView)
+            val a = context.obtainStyledAttributes(attrs, R.styleable.SingleOptionToggleView)
             try {
-                val title = a.getString(R.styleable.SwitchSettingView_switchTitle).orEmpty()
+                val title = a.getString(R.styleable.SingleOptionToggleView_switchTitle).orEmpty()
                 switchSetting_title.text = title
                 switchSetting_switch.text =
-                        a.getString(R.styleable.SwitchSettingView_switchSummary).orEmpty()
+                        a.getString(R.styleable.SingleOptionToggleView_switchSummary).orEmpty()
                 switchSetting_switch.isChecked =
-                        a.getBoolean(R.styleable.SwitchSettingView_switchChecked, false)
+                        a.getBoolean(R.styleable.SingleOptionToggleView_switchChecked, false)
 
                 switchSetting_switch.textOff = resources.getText(R.string.switch_disabled)
                 switchSetting_switch.textOn = resources.getText(R.string.switch_enabled)

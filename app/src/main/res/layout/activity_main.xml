@@ -15,10 +15,37 @@
         android:padding="10dp"
         style="@android:style/TextAppearance.DeviceDefault.SearchResult.Title"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"/>
 
     <LinearLayout
         android:id="@+id/switchContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            style="@android:style/TextAppearance.DeviceDefault.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/option_title" />
+
+        <Switch
+            style="@android:style/TextAppearance.DeviceDefault.Medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/option_summary"/>
+    </LinearLayout>
+
+    <TextView
+        android:text="@string/first_pass"
+        android:padding="10dp"
+        style="@android:style/TextAppearance.DeviceDefault.SearchResult.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/white"
@@ -49,7 +76,7 @@
         android:padding="10dp"
         android:layout_marginTop="8dp"/>
 
-    <com.example.amandariu.toggleviewtalkback.SwitchSettingView
+    <com.example.amandariu.toggleviewtalkback.SingleOptionToggleView
         android:id="@+id/switchSettings"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

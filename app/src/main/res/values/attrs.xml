@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <declare-styleable name="SwitchSettingView">
+    <declare-styleable name="SingleOptionToggleView">
         <attr name="switchTitle" format="reference|string"/>
         <attr name="switchSummary" format="reference|string"/>
         <attr name="switchChecked" format="boolean"/>
