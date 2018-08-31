@@ -1,3 +1,3 @@
 Custom Toggle View for TalkBack
 
-[[/Images/Talkback-activated.png|width=600px]]
+[Activated](Images/Talkback-activated.png)
